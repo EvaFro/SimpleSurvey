@@ -1,9 +1,24 @@
 html,
 body {
-  background-color: rgba(230, 205, 165, 0.582);
+  background-color: rgba(216, 215, 214, 0.582);
   font-family: sans-serif;
 
   h1 {
-    color: blueviolet;
+    color: rgba(137, 43, 226, 0.726);
+  }
+
+  button {
+    background: #e2e4e6;
+    box-shadow: 0 1px 0 0 #c4c9cc;
+    box-sizing: border-box;
+    display: block;
+    height: 32px;
+    margin-top: 8px;
+    max-width: 800px;
+    padding: 6px 11px 6px 11px;
+    position: relative;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+    font-weight: 800;
   }
 }
