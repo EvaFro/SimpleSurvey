@@ -11,4 +11,4 @@ const bundler = new Bundler(file, options);
 app.use(bundler.middleware());
 
 // Listen on port 8080
-app.listen(8080);
+app.listen(8080, ()=>{console.log('Listening on localhost:8080')});
