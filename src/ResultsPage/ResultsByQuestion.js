@@ -8,4 +8,4 @@ const ResultsByQuestion = (props) => (
   </div>
 );
 
-export default ResultsByQuestion;
+export default ResultsByQuestion; 

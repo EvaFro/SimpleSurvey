@@ -1,10 +1,10 @@
 import React from "react";
 import { render } from "react-dom";
 import Welcome from "./Welcome"
-import Survey from "./Survey"
-import Results from './Results'
+import Survey from "../SurveyPage/Survey"
+import Results from '../ResultsPage/Results'
 
-import questions from './data'
+import questions from '../data'
 import "./styles.scss";
 
 
