@@ -1,8 +1,8 @@
 import React from "react";
 import { render } from "react-dom";
 import Welcome from "./Welcome"
-import Survey from "../SurveyPage/Survey"
-import Results from '../ResultsPage/Results'
+// import Survey from "../SurveyPage/Survey"
+// import Results from '../ResultsPage/Results'
 
 import questions from '../data'
 import "../styles.scss";
@@ -26,10 +26,6 @@ class App extends React.Component {
     return (
       <div>
         <Welcome/>
-        <br/>
-        <Survey questions={questions} onSave={onSave}/>
-        <br/>
-        <Results questionsResults={questions}/>
       </div>
     );
   }
