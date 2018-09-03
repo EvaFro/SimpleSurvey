@@ -5,7 +5,7 @@ import Survey from "../SurveyPage/Survey"
 import Results from '../ResultsPage/Results'
 
 import questions from '../data'
-import "./styles.scss";
+import "../styles.scss";
 
 
 class App extends React.Component {
