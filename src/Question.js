@@ -4,7 +4,7 @@ const Question = (props) => (
   <div>
   <form>
       <div>
-        <p>{props.question.q}</p>
+        <h4>{`${props.question.num}) ${props.question.q}`}</h4>
         <label for="choice1">True</label>
         <input type="radio"
         id="choice1"
