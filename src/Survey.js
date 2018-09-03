@@ -1,26 +1,16 @@
 import React from "react";
+import Question from "./Question";
 
-class Survey extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      onSave : this.onSave.bind(this),
-      inputTitle : ''
-
-    };
-  }
-
-  onSave(event) {
-  }
-
-  render() {
-    const { inputTitle, onChange} = this.state;
-    return (
+const Survey = (props) => (
+  <div>
+      <h1>Please answer the following questions:</h1>
+      {props.questions.map((question) => {
+        return <Question question={question} />
+      })}
       <div>
-          <p>Please fill out the following questions:</p>
+        <button onClick={props.onSave} >Submit</button>
       </div>
-    );
-  }
-}
+  </div>
+);
 
 export default Survey;
