@@ -4,11 +4,11 @@ import Question from "./Question";
 const Survey = (props) => (
   <div>
       <h1>Please answer the following questions:</h1>
-      {props.questions.map((question) => {
-        return <Question question={question} />
+      {props.questions.map((question,i) => {
+        return <Question key={i} question={question} />
       })}
       <div>
-        <button onClick={props.onSave} >Submit</button>
+        <button onClick={()=>{props.switchComponent({name:'Results'})}} >Submit</button>
       </div>
   </div>
 );
