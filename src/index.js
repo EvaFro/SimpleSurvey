@@ -1,12 +1,39 @@
 import React from "react";
 import { render } from "react-dom";
+import Welcome from "./Welcome"
+import Survey from "./Survey"
+import Results from './Results'
 
+import questions from './data'
 import "./styles.scss";
 
-const App = () => (
-  <div>
-    <h1>Hello World!</h1>
-  </div>
-);
+
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      onSave : this.onSave.bind(this),
+      answers:{}
+    };
+  }
+
+  onSave(event) {
+
+  }
+
+  render() {
+    const { onSave } = this.state;
+    return (
+      <div>
+        <Welcome/>
+        <br/>
+        <Survey questions={questions} onSave={onSave}/>
+        <br/>
+        <Results questionsResults={questions}/>
+      </div>
+    );
+  }
+}
+
 
 render(<App />, document.getElementById("app"));
