@@ -1,8 +1,9 @@
 const Bundler = require('parcel-bundler');
 const app = require('express')();
 const bodyParser = require('body-parser')
-const questionsData = require('./src/data/data')
+const questionsData = require('./src/data/originalData')
 const fs = require('fs')
+
 const file = 'index.html'; // Pass an absolute path to the entrypoint here
 const options = {}; // See options section of api docs, for the possibilities
 

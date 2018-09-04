@@ -1,23 +1,36 @@
-# Eaze Services Homework Assignment - Simple Survey
-Create a simple anonymous survey. <br/>
+# Project Name
 
-Build an API in Node.js or .NET Core to allow for the anonymous creation/taking of surveys (i.e. you don't have to create a user account to create a survey).
+> Eaze Services Homework Assignment - Simple Survey
 
-## Specifications:
-API Should Support:
-* Creating a survey
-* Taking a Survey
-* Getting Results of a Survey
-* A survey should consist of survey questions and each question should have yes/no (true/false) answers
+## Requirements
 
-Data Persistence: <br/>
+An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 
-* You will need to persist the data in some way. 
-* You DO NOT need to use a database, and the easier for us to run it the better :).  
-* But think about how you would want to do it in production and write up (one paragraph) how you would do it. 
+- Node v9.8.0
 
-General: <br/>
+### Installing Dependencies & Executing Code 
 
-* Please include a README with instructions on how to run it. 
-* Use whatever framework or libraries you like. 
-* Finally, have fun!
+From within the root directory:
+
+```sh
+npm install  // to install dependencies
+npm start   // this will build public files and run server
+```
+* note this file can also be run with:
+
+```sh
+node server.js // this will build public files and run server
+```
+
+Then navigate to http://localhost:8080/ in your browser of choice. 
+
+### Saved Data
+
+From within the root directory:
+- All data is being saved in the outPutData file: `./src/data/outPutData.txt`
+
+If there were a database for this project. I would use a SQL database. This is because right now the form is basic,
+however, if we wanted to save user profiles we would want to be able to have relational database in order to query profiles
+related to specific results.  
+
+
