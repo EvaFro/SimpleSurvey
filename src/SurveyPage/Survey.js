@@ -36,9 +36,6 @@ class Survey extends React.Component {
     this.props.switchComponent(data)
   }
 
-
-
-
   render() {
     return (
       <div>
