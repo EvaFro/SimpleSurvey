@@ -1,5 +1,6 @@
 import React from "react";
 import Question from "./Question";
+import axios from 'axios'
 
 
 class Survey extends React.Component {
@@ -28,8 +29,14 @@ class Survey extends React.Component {
       questions:newQuestions
     }
 
+    axios.post('/results',newQuestions)
+    .then(res =>console.log(res))
+    .catch(error => console.error(error))
+
     this.props.switchComponent(data)
   }
+
+
 
 
   render() {
