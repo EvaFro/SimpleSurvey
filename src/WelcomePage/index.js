@@ -5,7 +5,7 @@ import Survey from "../SurveyPage/Survey"
 import Results from '../ResultsPage/Results'
 import axios from 'axios'
 
-import questions from '../data/data'
+// import questions from '../data/data'
 import "../styles.scss";
 
 
@@ -24,10 +24,10 @@ class App extends React.Component {
       .catch(error => console.error(error))
   }
 
-  switchComponent(data) {
-    console.log('This is the current Component: ', data.name)
+  switchComponent({name,questions=this.state.questionsData}) {
     this.setState({
-      currentComponent: data.name,
+      currentComponent: name,
+      questionsData: questions
     });
   }
 
@@ -44,7 +44,6 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state.questionsData)
     return (
       <div>
         {
